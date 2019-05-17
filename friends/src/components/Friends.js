@@ -4,6 +4,8 @@ import { withRouter } from 'react-router-dom';
 
 import { getData } from '../actions';
 
+import FriendForm from '../components/FriendForm'
+
 class Friends extends React.Component {
 
     componentDidMount(){
@@ -20,7 +22,9 @@ class Friends extends React.Component {
                     <p>{friend.email}</p>
                     </div>
                 ))}
+                 <FriendForm />
             </div>
+           
         )
     }
 }
